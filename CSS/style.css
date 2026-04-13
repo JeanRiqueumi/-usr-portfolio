@@ -1,0 +1,175 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1100px;
+}
+
+/*CABEÇALHO*/
+header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+  background-color: #1e2629;
+}
+
+/*NAV*/
+nav {
+    align-items: center;
+    background-color: #0c141a;
+    display: flex;
+    height: 130px;
+    padding: 5px;
+}
+
+nav > h2 {
+    color: #00ffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+nav > img {
+    border: 2px solid #00ffff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+/*CONFIGURAÇÕES GERAIS*/
+h2 {
+    color: #00FF7F;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+/* MAIN GERAL*/
+main {
+    background-color: #0c141a;
+    padding: 10px;
+}
+
+/*SOBRE MIM*/
+.container-sobre > p {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+/*CARDS*/
+.container-card ul {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0;
+    list-style: none;
+}
+
+.container-card li {
+    border: 1px solid #00FF7F;
+    color: #00FF7F;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    background: rgba(0, 255, 127, 0.05); 
+    transition: all 0.3s ease;
+}
+
+.container-card li:hover {
+    background: #00FF7F;
+    color: #000; 
+    box-shadow: 0 0 10px #00FF7F;
+}
+.container-cards {
+    background-color: #1e282a;
+    border-radius: 15%;
+    margin: 15px auto;
+    height: 200px;
+    text-align: center;
+    width: 90%;
+}
+
+.container-cards li:hover {
+    background: #00FF7F;
+    color: #000; 
+    box-shadow: 0 0 10px #00FF7F;
+}
+
+.container-cards > ul {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.container-cards > ul > li {
+    padding: 5px;
+}
+li > a > img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor que você já definiu (verde/branco) */
+}
+
+a:hover {
+    color: #00FF7F; /* Garante que brilhe no hover */
+}
+
+/*RESPONSIVIDADE*/
+@media (min-width: 1280px) {
+    body {
+        background-color:  #0c141a;
+    }
+    header, nav, main {
+        margin: 0 auto;
+        width: 60%;
+        padding: 1px;
+    }
+
+    .desktop-row {
+        display: flex;          
+        justify-content: center; 
+        align-items: stretch;    
+        gap: 20px;              
+        width: 100%;
+        max-width: 1000px;      
+        margin: 0 auto;         
+    }
+    
+    .container-cards {
+        border-radius: 5%;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color:  #0c141a;
+    }
+    header, nav, main {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .desktop-row {
+        display: flex;          
+        justify-content: center; 
+        align-items: stretch;    
+        gap: 20px;              
+        width: 100%;
+        max-width: 1000px;      
+        margin: 0 auto;         
+    }
+    
+    .container-cards {
+        border-radius: 5%;
+    }
+}
